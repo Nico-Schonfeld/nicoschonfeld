@@ -32,21 +32,49 @@
   },
   "layout": {
     "header": {
-      "logo": "/assets/icons/LogoNS.svg"
+      "logo": "/assets/icons/LogoNS.svg",
+      "theme": [
+        { "id": 0, "title": "Dark", "icon": "..." },
+        { "id": 1, "title": "White", "icon": "..." }
+      ]
     },
     "home": {
-      "photo": "/assets/banners/photoMe3.png",
+      "photo": "/assets/banners/photoMe_BW.jpg",
+      "photoColor": "/assets/banners/photoMe3.png",
       "name": "Nico Schönfeld",
       "sex": "he/him",
       "tagsMe": [
-        { "id": 0, "icon": "...", "text": "Front-End Developer" },
-        { "id": 1, "icon": "...", "text": "Córdoba, Argentina" },
-        { "id": 2, "icon": "...", "text": "E-Mail" },
-        { "id": 3, "icon": "...", "text": "Links" }
+        {
+          "id": 0,
+          "icon": "...",
+          "text": "Front-End Developer",
+          "isLink": false
+        },
+        {
+          "id": 1,
+          "icon": "...",
+          "text": "Córdoba, Argentina",
+          "isLink": false
+        },
+        {
+          "id": 2,
+          "icon": "...",
+          "text": "E-Mail",
+          "to": "instagram.com",
+          "isLink": true
+        },
+        {
+          "id": 3,
+          "icon": "...",
+          "text": "Links",
+          "to": "/links",
+          "isLink": true
+        }
       ],
       "aboutSection": {
-        "title": "about",
-        "text": "Desarrollador Full Stack especializado en Front End. Tengo 22 años, soy de Córdoba Argentina. ¡Desarrollando el Futuro!",
+        "title": "About",
+        "text": "2 años de experiencia profecional. Desarrollador Full Stack especializado en Front End. Tengo 22 años, soy de Córdoba Argentina. ¡Desarrollando el Futuro!",
+        "text2": "En mis tiempos libres juego, programo, diseño, entreno",
         "signature": "..."
       },
       "buttonsSocialMediaHome": [
