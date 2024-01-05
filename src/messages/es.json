@@ -33,9 +33,10 @@
   "layout": {
     "header": {
       "logo": "/assets/icons/LogoNS.svg",
-      "theme": [
-        { "id": 0, "title": "Dark", "icon": "..." },
-        { "id": 1, "title": "White", "icon": "..." }
+      "themeButton": [
+        { "id": 0, "title": "Monitor", "icon": "/assets/icons/Monitor.svg" },
+        { "id": 1, "title": "Dark", "icon": "/assets/icons/Monitor.svg" },
+        { "id": 2, "title": "White", "icon": "/assets/icons/Monitor.svg" }
       ]
     },
     "home": {
@@ -46,26 +47,26 @@
       "tagsMe": [
         {
           "id": 0,
-          "icon": "...",
+          "icon": "/assets/icons/Monitor.svg",
           "text": "Front-End Developer",
           "isLink": false
         },
         {
           "id": 1,
-          "icon": "...",
+          "icon": "/assets/icons/Map.svg",
           "text": "Córdoba, Argentina",
           "isLink": false
         },
         {
           "id": 2,
-          "icon": "...",
+          "icon": "/assets/icons/Copy.svg",
           "text": "E-Mail",
-          "to": "instagram.com",
+          "to": "...",
           "isLink": true
         },
         {
           "id": 3,
-          "icon": "...",
+          "icon": "/assets/icons/Links.svg",
           "text": "Links",
           "to": "/links",
           "isLink": true
