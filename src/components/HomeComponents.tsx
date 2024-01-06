@@ -14,7 +14,11 @@ const HomeComponents = () => {
   return (
     <div className="relative z-10 w-full h-full flex items-center justify-start flex-col gap-20 px-10">
       <div className="w-full flex items-center justify-between mt-52">
-        <Link href="/links">
+        <Link
+          href="https://www.instagram.com/nicoschonfeld_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div>
             <Image
               src={text.photo}
@@ -28,11 +32,10 @@ const HomeComponents = () => {
 
         <div className="flex items-start flex-col gap-2">
           <div className="flex items-center gap-3">
-            <Link href="/links">
-              <h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80 font-bold">
-                {text.name}
-              </h1>
-            </Link>
+            <h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80 font-bold">
+              {text.name}
+            </h1>
+
             <span className="bg-[#101010] border border-gray-700 text-sm px-1.5 rounded-md text-gray-400">
               {text.sex}
             </span>
@@ -42,9 +45,10 @@ const HomeComponents = () => {
             {text.tagsMe.map((tag) => (
               <li key={tag.id} className="text-gray-400 text-sm">
                 {tag.isLink ? (
-                  <a
-                    href={tag.to}
+                  <Link
+                    href={`${tag.to}`}
                     className=" hover:text-gray-50 transition-all underline flex items-center gap-1.5"
+                    rel="noopener noreferrer"
                   >
                     <Image
                       src={tag.icon}
@@ -53,7 +57,7 @@ const HomeComponents = () => {
                       height={16}
                     />
                     {tag.text}
-                  </a>
+                  </Link>
                 ) : (
                   <span className="flex items-center gap-1.5">
                     <Image

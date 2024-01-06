@@ -34,9 +34,8 @@
     "header": {
       "logo": "/assets/icons/LogoNS.svg",
       "themeButton": [
-        { "id": 0, "title": "Monitor", "icon": "/assets/icons/Monitor.svg" },
-        { "id": 1, "title": "Dark", "icon": "/assets/icons/Monitor.svg" },
-        { "id": 2, "title": "White", "icon": "/assets/icons/Monitor.svg" }
+        { "id": 0, "title": "Dark", "icon": "/assets/icons/Moon.svg" },
+        { "id": 1, "title": "White", "icon": "/assets/icons/Sun.svg" }
       ]
     },
     "home": {
