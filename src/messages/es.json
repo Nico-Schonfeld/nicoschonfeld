@@ -34,8 +34,18 @@
     "header": {
       "logo": "/assets/icons/LogoNS.svg",
       "themeButton": [
-        { "id": 0, "title": "Dark", "icon": "/assets/icons/Moon.svg" },
-        { "id": 1, "title": "White", "icon": "/assets/icons/Sun.svg" }
+        {
+          "id": 0,
+          "title": "Dark",
+          "theme": "dark",
+          "icon": "/assets/icons/Moon.svg"
+        },
+        {
+          "id": 1,
+          "title": "Light",
+          "theme": "light",
+          "icon": "/assets/icons/Sun.svg"
+        }
       ]
     },
     "home": {

@@ -5,11 +5,12 @@ import React from "react";
 import texts from "@/messages/es.json";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
 
 const HomeComponents = () => {
   const text = texts.layout.home;
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="relative z-10 w-full h-full flex items-center justify-start flex-col gap-20 px-10">

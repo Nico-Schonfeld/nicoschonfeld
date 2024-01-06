@@ -6,22 +6,38 @@ import Image from "next/image";
 import { ThemeButton, themeIndex, themeSchema } from "@/types/types";
 
 import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "next-themes";
 
 const HeaderComponent: React.FC = () => {
   const text = texts.layout.header;
+  const { theme, setTheme } = useTheme();
   const [themeIsActive, setThemeIsActive] = useState<ThemeButton>(false);
   const [themeIndex, setThemeIndex] = useState<themeIndex>(0);
 
   const handleTheme = (theme: themeSchema, index: number) => {
-    console.log(theme.title);
+    setTheme(theme.theme);
     setThemeIndex(index);
     setThemeIsActive(null);
+  };
+
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
     <header className="w-full h-auto fixed z-20 backdrop-blur-sm bg-transparent">
       <div className="text-white container mx-auto max-w-3xl px-12 py-5 flex items-center justify-between">
-        <Image src={text.logo} alt="nico" width={24} height={24} />
+        <Image
+          src={text.logo}
+          alt="nico"
+          width={24}
+          height={24}
+          onClick={scrollUp}
+          className="cursor-pointer"
+        />
 
         <button
           className="hover:bg-white/10 p-1.5 rounded-md transition-all relative"
